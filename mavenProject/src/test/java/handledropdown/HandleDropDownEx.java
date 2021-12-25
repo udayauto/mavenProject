@@ -18,7 +18,7 @@ public class HandleDropDownEx {
 		WebDriverManager.chromedriver().setup(); // System.SetProperty
 		WebDriver driver = new ChromeDriver();
 		
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		
 		// Open application.
 		driver.get("http://softwaretesting-guru.blogspot.com/p/main-page.html");
@@ -62,6 +62,7 @@ public class HandleDropDownEx {
 		// submit form
 		driver.findElement(By.xpath("//input[@value='Submit']")).click();
 		
+		System.out.println("Execution is complete");
 	}
 
 }
