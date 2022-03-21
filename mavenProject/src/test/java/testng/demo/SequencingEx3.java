@@ -1,11 +1,8 @@
 package testng.demo;
-import org.testng.annotations.Test;
-public class SequencingEx {
 
-	// Sequencing
-	// -- Priority
-	// -- dependency
-	//testNG --default -- alphabetical order 
+import org.testng.annotations.Test;
+
+public class SequencingEx3 {
 	
 	@Test(priority=0)
 	public void Hyderabad() {
@@ -43,5 +40,5 @@ public class SequencingEx {
 
 		System.out.println("Test case 6");
 	}
-	
+
 }

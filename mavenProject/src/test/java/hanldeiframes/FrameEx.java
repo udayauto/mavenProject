@@ -9,6 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class FrameEx {
+	
 	public static void main(String[] args) {
 		// open browser --
 		WebDriverManager.chromedriver().setup(); // replcae of system
@@ -49,6 +50,8 @@ public class FrameEx {
 		driver.findElement(By.xpath(
 				"//div[@class='fixedNav']//div[@class='subNav']//ul[@class='navList']//li//a[@href='overview-summary.html'][normalize-space()='No Frames']"))
 				.click();
+		
+		//alert ---by Uday
 	}
 
 }
